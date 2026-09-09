@@ -1,0 +1,44 @@
+# ESP-IDF build output
+build/
+**/build/
+managed_components/
+**/managed_components/
+sdkconfig.old
+
+# Local credentials and machine-specific config
+.env
+.env.*
+*.env
+network_config.local.h
+**/network_config.local.h
+
+# Node.js
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python/cache/test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Editor and OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Runtime/debug artifacts
+*.log
+*.tmp
+*.bak
+*.elf
+*.bin
+*.map
+*.uf2
+freertos-communication-hub/main/network_config.h

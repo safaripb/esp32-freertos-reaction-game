@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Reaction Arcade</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="control-panel">
+        <div>
+          <p class="eyebrow">ESP32 Reaction Arcade</p>
+          <h1>Target Drop</h1>
+        </div>
+        <button id="startButton" type="button">Start Game</button>
+      </header>
+
+      <section class="dashboard" aria-label="Game status">
+        <div class="metric primary">
+          <span>Score</span>
+          <strong id="scoreText">0</strong>
+        </div>
+        <div class="metric streak good">
+          <span>Success Streak</span>
+          <strong id="successStreakText">0 / 5</strong>
+        </div>
+        <div class="metric streak bad">
+          <span>Failure Streak</span>
+          <strong id="failureStreakText">0 / 5</strong>
+        </div>
+        <div class="metric">
+          <span>Latest Reaction</span>
+          <strong id="reactionText">--</strong>
+        </div>
+        <div class="metric">
+          <span>Success Rate</span>
+          <strong id="successRateText">0%</strong>
+        </div>
+        <div class="metric">
+          <span>Hardware</span>
+          <strong id="connectionText">Offline</strong>
+        </div>
+      </section>
+
+      <section class="arena-shell">
+        <div class="arena-header">
+          <span id="sessionText">Ready</span>
+          <span id="windowText">Window closed</span>
+        </div>
+        <canvas id="gameCanvas" width="1100" height="620" aria-label="Reaction game arena"></canvas>
+        <div id="feedbackBanner" class="feedback-banner"></div>
+        <section id="gameOverPanel" class="game-over hidden" aria-live="polite">
+          <h2 id="gameOverTitle">GAME OVER</h2>
+          <div class="summary-grid">
+            <div><span>Final Score</span><strong id="finalScore">0</strong></div>
+            <div><span>Successes</span><strong id="finalSuccesses">0</strong></div>
+            <div><span>Misses</span><strong id="finalMisses">0</strong></div>
+            <div><span>Wrong Scans</span><strong id="finalWrongScans">0</strong></div>
+            <div><span>Success Rate</span><strong id="finalSuccessRate">0%</strong></div>
+            <div><span>Average Reaction</span><strong id="finalAverage">--</strong></div>
+            <div><span>Best Reaction</span><strong id="finalBest">--</strong></div>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
