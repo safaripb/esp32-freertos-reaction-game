@@ -6,7 +6,7 @@ A cyber-physical reaction game combining an ESP32 FreeRTOS embedded system with 
 <img width="541" height="700" alt="image" src="https://github.com/user-attachments/assets/818c518e-a777-4126-b0b7-e651a520f2da" />
 
 
-[Watch the short demo video](images/35%20second%20demo.mp4)
+[Watch the short demo video](https://youtube.com/shorts/Z8_G6UuvFa0)
 
 ## Project Overview
 
