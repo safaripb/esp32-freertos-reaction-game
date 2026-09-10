@@ -8,9 +8,7 @@ A cyber-physical reaction game combining an ESP32 FreeRTOS embedded system with 
 
 ## Project Overview
 
-This project connects a physical ESP32 game controller to a browser arcade game. A highlighted target emoji moves inside the browser arena. When the target reaches the bottom boundary, the player has a short reaction window to scan an RFID tag on the RC522 reader. The PC-side server judges the attempt, updates streaks and statistics, and sends result feedback back to the ESP32.
-
-The embedded side stays hardware-focused. It detects RFID scans, drives the OLED, runs the stepper motor, maintains the FreeRTOS event architecture, and exchanges messages with the PC over WebSockets. The PC side owns scoring and timing so browser and ESP32 clocks do not need to be compared directly.
+This project connects a physical ESP32 game controller to a browser arcade game. A highlighted target emoji moves inside the browser arena. When the target reaches the bottom boundary, the player has a short reaction window to scan an RFID tag on the RC522 reader. The PC-side server judges the attempt, updates streaks and statistics, and sends result feedback back to the ESP32. The embedded side stays hardware-focused. It detects RFID scans, drives the OLED, runs the stepper motor, maintains the FreeRTOS event architecture, and exchanges messages with the PC over WebSockets. The PC side owns scoring and timing so browser and ESP32 clocks do not need to be compared directly.
 
 ## Gameplay
 
