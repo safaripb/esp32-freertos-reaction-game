@@ -3,6 +3,8 @@
 A cyber-physical reaction game combining an ESP32 FreeRTOS embedded system with a WebSocket-connected browser game. The ESP32 concurrently manages RFID input, OLED feedback, stepper-motor control, networking, and game events while player reaction time and success statistics are measured by the PC-side game.
 
 ![Browser game-over screen](images/Game%20screen%20Game%20over.jpg)
+<img width="1041" height="1280" alt="image" src="https://github.com/user-attachments/assets/818c518e-a777-4126-b0b7-e651a520f2da" />
+
 
 [Watch the short demo video](images/35%20second%20demo.mp4)
 
