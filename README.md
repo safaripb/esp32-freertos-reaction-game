@@ -1,5 +1,6 @@
 # ESP32 FreeRTOS Reaction Game
-***This project uses data (average user-reaction time) from here***
+***This project uses data (average user-reaction time) from here -> https://github.com/safaripb/research-reaction-time-***
+******
 **React as quickly as possible to scan the card to RFID. Once the target reaches bottom of the screen you'll have 0.9s to act! Beware targets change each time and you can only loose 5 times in a row**
 
 
