@@ -1,7 +1,7 @@
 # ESP32 FreeRTOS Reaction Game
 ***This project uses data (average user-reaction time) from here -> https://github.com/safaripb/research-reaction-time-***
 ******
-**React as quickly as possible to scan the card to RFID. Once the target reaches bottom of the screen you'll have 0.9s to act! Beware targets change each time and you can only loose 5 times in a row**
+**React as quickly as possible to scan the card to RFID. Once the target reaches bottom of the screen you'll have 0.9s to act! Remember that targets change each time you miss or hit them and you can only loose 5 times in a row! Have fun!**
 
 
 A cyber physical reaction game combining an ESP32 FreeRTOS embedded system with a WebSocket-connected browser game. The ESP32 concurrently manages RFID input, OLED feedback, stepper-motor control, networking, and game events while player reaction time and success statistics are measured by the PC-side game.
