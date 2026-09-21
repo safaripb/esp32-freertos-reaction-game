@@ -1,6 +1,9 @@
 # ESP32 FreeRTOS Reaction Game
+***This project uses data (average user-reaction time) from here***
+**React as quickly as possible to scan the card to RFID. Once the target reaches bottom of the screen you'll have 0.9s to act! Beware targets change each time and you can only loose 5 times in a row**
 
-A cyber-physical reaction game combining an ESP32 FreeRTOS embedded system with a WebSocket-connected browser game. The ESP32 concurrently manages RFID input, OLED feedback, stepper-motor control, networking, and game events while player reaction time and success statistics are measured by the PC-side game.
+
+A cyber physical reaction game combining an ESP32 FreeRTOS embedded system with a WebSocket-connected browser game. The ESP32 concurrently manages RFID input, OLED feedback, stepper-motor control, networking, and game events while player reaction time and success statistics are measured by the PC-side game.
 
 ![Browser game-over screen](images/Game%20screen%20Game%20over.jpg)
 <img width="541" height="700" alt="image" src="https://github.com/user-attachments/assets/818c518e-a777-4126-b0b7-e651a520f2da" />
